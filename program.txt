@@ -1,0 +1,15 @@
+lui x1, 5
+lui x2, 6
+add x3, x1, x2
+sub x3, x1, x2
+sh x3, 48(x2)
+lh x9, 48(x2)
+lui x6, 8
+lui x7, 9
+sub x4, x7, x6
+sb x1, 50(x3)
+lb x1, 50(x3)
+
+printb 50(x3)
+
+halt
